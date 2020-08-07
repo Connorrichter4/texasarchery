@@ -31,7 +31,7 @@ function NavBar() {
 
 	return (
 		<div className='header'>
-			<h1 className='title'>Texas Archery Academy</h1>
+			<Link to='/' className='title'>Texas Archery Academy</Link>
 			<React.Fragment>
 				<Button onClick={toggleDrawer('right', true)}>
 					<DehazeIcon  style={{ fill: 'white'}} />
