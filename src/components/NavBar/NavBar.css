@@ -1,6 +1,23 @@
-.header{
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	background: black;
+	color: white;
+}
+.title {
     border: solid red;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    font-size: 1.5em;
+}
+.nav-link {
+	padding: 1rem;
+	font-size: 1em;
+	color: white;
+	text-decoration: none;
+}
+.nav-link:hover {
+	background: rgb(96, 96, 96);
+	transition-duration: 0.5s;
 }
