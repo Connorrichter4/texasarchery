@@ -9,7 +9,7 @@ function Home() {
 				<Carousel.Item>
 					<img
 						className='d-block w-100'
-						src='https://cdn.pixabay.com/photo/2015/01/17/11/32/archery-602125_960_720.jpg'
+						src='https://cdn.pixabay.com/photo/2015/08/20/19/27/archery-898001_960_720.jpg'
 						alt='First slide'
 					/>
 					<Carousel.Caption>
@@ -20,7 +20,7 @@ function Home() {
 				<Carousel.Item>
 					<img
 						className='d-block w-100'
-						src='https://cdn.pixabay.com/photo/2015/01/17/11/32/archery-602125_960_720.jpg'
+						src='https://cdn.pixabay.com/photo/2014/12/20/09/26/archery-573771_960_720.jpg'
 						alt='Third slide'
 					/>
 
