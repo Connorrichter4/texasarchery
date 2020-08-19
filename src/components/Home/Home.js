@@ -9,12 +9,12 @@ function Home() {
 				<Carousel.Item>
 					<img
 						className='d-block w-100'
-						src='https://cdn.pixabay.com/photo/2015/08/20/19/27/archery-898001_960_720.jpg'
+						src='https://cdn.pixabay.com/photo/2019/05/11/10/38/archery-4195456_640.jpg'
 						alt='First slide'
 					/>
 					<Carousel.Caption>
-						<h3>First slide label</h3>
-						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+						<h3>Intro to Archery Classes</h3>
+						<p>Check out our intro to archery every wednesday.</p>
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>
