@@ -32,7 +32,7 @@ function Contact() {
 		message: '',
 	});
 
-	const [emailSent, setEmailSent] = useState(false);
+	// const [emailSent, setEmailSent] = useState(false);
 
 	const handleChange = (event) => {
 		event.persist();
@@ -41,22 +41,18 @@ function Contact() {
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
-
-		// fetch('http://localhost:4040/api/email', {
-		// 	method: 'POST',
-		// 	body: JSON.stringify({
-		// 		name: contact.name,
-		// 		email: contact.email,
-		// 		message: contact.message,
-		// 	}),
-		// })
-		// 	.then((response) => response.json())
-		// 	.then((response) => {
-		// 		setEmailSent(true);
-		// 	})
-		// 	.catch((error) => {
-		// 		console.log(error);
-		// 	});
+		fetch('http://localhost:3002/send', {
+			method: 'POST',
+			body: JSON.stringify(contact),
+			headers: {
+				Accept: 'application/json',
+				'Content-Type': 'application/json',
+			},
+		})
+			.then((response) => response.json())
+			.then((response) => {
+				console.log(response);
+			});
 	};
 
 	return (
@@ -65,7 +61,8 @@ function Contact() {
 				className={classes.root}
 				noValidate
 				autoComplete='off'
-				onSubmit={handleSubmit}>
+				onSubmit={handleSubmit}
+				method="POST">
 				<h2>Contact Us:</h2>
 				<TextField
 					id='filled-basic'
@@ -77,6 +74,7 @@ function Contact() {
 					margin='normal'
 					fullWidth
 					onChange={handleChange}
+					value={contact.name}
 				/>
 				<TextField
 					id='filled-basic'
@@ -86,6 +84,7 @@ function Contact() {
 					required
 					fullWidth
 					onChange={handleChange}
+					value={contact.email}
 				/>
 				<TextField
 					id='filled-basic'
@@ -97,6 +96,7 @@ function Contact() {
 					rows={4}
 					fullWidth
 					onChange={handleChange}
+					value={contact.message}
 				/>
 				<Button onClick={handleSubmit}>Submit</Button>
 			</form>

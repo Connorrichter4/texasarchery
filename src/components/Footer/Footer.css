@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 1rem;
+    padding: 1.5rem;
     color:  white;
     background: black;
-    height: 30vh;
+    /* height: 40vh; */
 }

@@ -8,7 +8,7 @@ function Home() {
 			<Carousel>
 				<Carousel.Item>
 					<img
-						className='d-block w-100'
+						className='home-image'
 						src='https://cdn.pixabay.com/photo/2019/05/11/10/38/archery-4195456_640.jpg'
 						alt='First slide'
 					/>
@@ -19,7 +19,7 @@ function Home() {
 				</Carousel.Item>
 				<Carousel.Item>
 					<img
-						className='d-block w-100'
+						className='home-image'
 						src='https://cdn.pixabay.com/photo/2014/12/20/09/26/archery-573771_960_720.jpg'
 						alt='Third slide'
 					/>
@@ -31,7 +31,7 @@ function Home() {
 				</Carousel.Item>
 				<Carousel.Item>
 					<img
-						className='d-block w-100'
+						className='home-image'
 						src='https://cdn.pixabay.com/photo/2015/01/17/11/32/archery-602125_960_720.jpg'
 						alt='Third slide'
 					/>
