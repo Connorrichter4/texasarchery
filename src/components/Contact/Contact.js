@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 		height: '65vh',
 		justifyContent: 'center',
 		alignItems: 'center',
-		background: 'white',
+		background: '#fffcf2',
 		borderRadius: '5px',
 		boxShadow: '5px 5px 20px black',
 	},

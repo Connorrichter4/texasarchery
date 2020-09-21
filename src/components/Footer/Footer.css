@@ -3,7 +3,16 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 1.5rem;
-    color:  white;
-    background: black;
-    /* height: 40vh; */
+    color:  #fffcf2;
+    background: #252422;
+}
+
+.footer-links {
+    color: #fffcf2;
+    padding-bottom: 1rem
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
 }

@@ -1,3 +1,16 @@
 .home-image {
-    height: 60vh;
+	height: 60vh;
+}
+
+.caption {
+	background: rgba(77, 77, 77, 0.666);
+}
+
+.caption:hover {
+	background: rgba(77, 77, 77, 0.886);
+}
+
+
+.caption-text {
+	color: #fffcf2;
 }

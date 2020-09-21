@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
-import DehazeIcon from '@material-ui/icons/Dehaze';
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import './NavBar.css';
 
 const useStyles = makeStyles({
 	paper: {
-		background: 'gray',
+		background: '#403d39',
 	},
 });
 
@@ -31,10 +30,15 @@ function NavBar() {
 
 	return (
 		<div className='header'>
-			<Link to='/' className='title'>Texas Archery Academy</Link>
+			<Link to='/' className='title'>
+				Texas Archery Academy
+			</Link>
 			<React.Fragment>
 				<Button onClick={toggleDrawer('right', true)}>
-					<DehazeIcon  style={{ fill: 'white'}} />
+					<i
+						className='fa fa-bars fa-2x'
+						style={{ color: '#ccc5b9' }}
+						aria-hidden='true'></i>
 				</Button>
 				<Drawer
 					anchor='right'

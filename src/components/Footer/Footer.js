@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 function Footer() {
     return (
 			<footer className='footer'>
-				<div>
-					<p>Staff Login</p>
-					<p>Contact Us</p>
+				<div className='footer-left'>
+					<a href='http://texasarchery.info/staff-login' className='footer-links'>Staff Login</a>
+					<Link to='/contact' className='footer-links'>Contact Us</Link>
 					<p>Copyright &copy; 2020 TexasArchery.info - All Rights Reserved</p>
 				</div>
 				<div>

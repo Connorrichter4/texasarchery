@@ -4,19 +4,21 @@
 	justify-content: space-between;
 	padding-right: 1rem;
 	padding-left: 1rem;
-	background: black;
-	color: white;
+	background: #252422;
+	color: #fffcf2;
 }
 .title {
 	font-size: 1.5em;
 	padding: 1rem;
 	text-decoration: none;
-	color: white;
+	color: #fffcf2;
+	font-family: 'Poller One', cursive;
+
 }
 .nav-link {
-	padding: 1rem;
+	margin-top: 1rem;
 	font-size: 1em;
-	color: white;
+	color: #fffcf2;
 	text-decoration: none;
 }
 .nav-link:hover {
