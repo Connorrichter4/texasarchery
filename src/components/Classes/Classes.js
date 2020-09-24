@@ -50,14 +50,13 @@ function Classes() {
 						<Card.Body>
 							<Card.Title>{item.name}</Card.Title>
 							<Card.Text>
-								<p>{item.description}</p>
-								<p>{item.schedule}</p>
-								<p>
-									<strong>{item.cost}</strong>
-								</p>
-								<p>
-									<strong>{item.ages}</strong>
-								</p>
+								{item.description}
+								<br />
+								{item.schedule}
+								<br />
+								<strong>{item.cost}</strong>
+								<br />
+								<strong>{item.ages}</strong>
 							</Card.Text>
 						</Card.Body>
 					</Card>

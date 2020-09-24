@@ -1,0 +1,16 @@
+.event-container {
+    padding: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.event-title {
+    margin: 1rem 0;
+    padding-top: 1rem;
+    border-top: solid 1px;
+}
+
+.event-item {
+    padding: 1rem 0;
+    border-top: solid 1px;
+}
