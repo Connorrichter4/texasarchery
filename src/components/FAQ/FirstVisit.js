@@ -48,7 +48,7 @@ const questions = [
 
 function FirstVisit() {
 	return (
-		<div>
+		<div className='faq-container'>
 			<div className='first-visit-headers'>
 				<h3>Things to know before you arrive!</h3>
 				<h4>

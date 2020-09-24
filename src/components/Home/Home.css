@@ -4,13 +4,27 @@
 
 .caption {
 	background: rgba(77, 77, 77, 0.666);
+	max-width: 600px;
+	margin: 0 auto;
 }
 
 .caption:hover {
 	background: rgba(77, 77, 77, 0.886);
 }
 
-
 .caption-text {
 	color: #fffcf2;
+}
+.container-carousel {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+@media (min-width: 450px) {
+	.home-image {
+		width: 100vw;
+		height: 100%;
+		display: block;
+	}
 }

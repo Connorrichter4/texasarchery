@@ -1,10 +1,15 @@
+footer {
+    color:  #fffcf2;
+    background: #252422;
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 1.5rem;
-    color:  #fffcf2;
-    background: #252422;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .footer-links {

@@ -1,0 +1,14 @@
+.class-card {
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 450px) {
+	.class-card {
+		display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        padding: 1rem;
+        max-width: 1000px;
+        margin: 0 auto;
+	}
+}

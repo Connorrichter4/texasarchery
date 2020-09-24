@@ -29,44 +29,46 @@ function NavBar() {
 	};
 
 	return (
-		<div className='header'>
-			<Link to='/' className='title'>
-				Texas Archery Academy
-			</Link>
-			<React.Fragment>
-				<Button onClick={toggleDrawer('right', true)}>
-					<i
-						className='fa fa-bars fa-2x'
-						style={{ color: '#ccc5b9' }}
-						aria-hidden='true'></i>
-				</Button>
-				<Drawer
-					anchor='right'
-					open={state['right']}
-					onClose={toggleDrawer('right', false)}
-					onClick={toggleDrawer('right', false)}
-					classes={{ paper: classes.paper }}>
-					<Link to='/' className='nav-link'>
-						HOME
-					</Link>
-					<Link to='/firstvisit' className='nav-link'>
-						FIRST VISIT FAQ
-					</Link>
-					<Link to='/classes' className='nav-link'>
-						CLASSES
-					</Link>
-					<Link to='/events' className='nav-link'>
-						GROUPS & BIRTHDAYS
-					</Link>
-					<Link to='/locations' className='nav-link'>
-						LOCATIONS
-					</Link>
-					<Link to='/contact' className='nav-link'>
-						CONTACT US
-					</Link>
-				</Drawer>
-			</React.Fragment>
-		</div>
+		<header>
+			<div className='header'>
+				<Link to='/' className='title'>
+					Texas Archery Academy
+				</Link>
+				<React.Fragment>
+					<Button onClick={toggleDrawer('right', true)}>
+						<i
+							className='fa fa-bars fa-2x'
+							style={{ color: '#ccc5b9' }}
+							aria-hidden='true'></i>
+					</Button>
+					<Drawer
+						anchor='right'
+						open={state['right']}
+						onClose={toggleDrawer('right', false)}
+						onClick={toggleDrawer('right', false)}
+						classes={{ paper: classes.paper }}>
+						<Link to='/' className='nav-link'>
+							HOME
+						</Link>
+						<Link to='/firstvisit' className='nav-link'>
+							FIRST VISIT FAQ
+						</Link>
+						<Link to='/classes' className='nav-link'>
+							CLASSES
+						</Link>
+						<Link to='/events' className='nav-link'>
+							GROUPS & BIRTHDAYS
+						</Link>
+						<Link to='/locations' className='nav-link'>
+							LOCATIONS
+						</Link>
+						<Link to='/contact' className='nav-link'>
+							CONTACT US
+						</Link>
+					</Drawer>
+				</React.Fragment>
+			</div>
+		</header>
 	);
 }
 

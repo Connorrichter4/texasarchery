@@ -1,19 +1,21 @@
+header {
+	background: #252422;
+	color: #fffcf2;
+}
+
 .header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-right: 1rem;
-	padding-left: 1rem;
-	background: #252422;
-	color: #fffcf2;
+	padding: 1rem 1.5rem;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 .title {
 	font-size: 1.5em;
-	padding: 1rem;
 	text-decoration: none;
 	color: #fffcf2;
 	font-family: 'Poller One', cursive;
-
 }
 .nav-link {
 	margin-top: 1rem;

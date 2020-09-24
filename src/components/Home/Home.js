@@ -10,7 +10,7 @@ const carouselItems = [
 		imgSrc:
 			'https://cdn.pixabay.com/photo/2019/05/11/10/38/archery-4195456_640.jpg',
 		title: 'Intro To Archery',
-		info: 'Check out our intro to archery every wednesday.',
+		info: 'Check out our intro to archery every saturday.',
 		link: '/classes',
 	},
 	{
@@ -33,21 +33,23 @@ const carouselItems = [
 
 function Home() {
 	return (
-		<Carousel>
-			{carouselItems.map((item) => {
-				return (
-					<Carousel.Item key={item.id}>
-						<img className='home-image' src={item.imgSrc} alt='First slide' />
-						<Link to={item.link} className='home-link'>
-							<Carousel.Caption className='caption'>
-								<h3 className='caption-text'>{item.title}</h3>
-								<p className='caption-text'>{item.info}</p>
-							</Carousel.Caption>
-						</Link>
-					</Carousel.Item>
-				);
-			})}
-		</Carousel>
+		<div className='container-carousel'>
+			<Carousel>
+				{carouselItems.map((item) => {
+					return (
+						<Carousel.Item key={item.id}>
+							<img className='home-image' src={item.imgSrc} alt='First slide' />
+							<Link to={item.link} className='home-link'>
+								<Carousel.Caption className='caption'>
+									<h3 className='caption-text'>{item.title}</h3>
+									<p className='caption-text'>{item.info}</p>
+								</Carousel.Caption>
+							</Link>
+						</Carousel.Item>
+					);
+				})}
+			</Carousel>
+		</div>
 	);
 }
 
