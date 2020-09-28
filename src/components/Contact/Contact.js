@@ -55,7 +55,7 @@ function Contact() {
 				autoComplete='off'
 				// onSubmit={handleSubmit}
 				method='POST'
-				action='/contact/success'
+				action='/'
 				data-netlify='true'>
 				<h2>Contact Us:</h2>
 				<TextField
