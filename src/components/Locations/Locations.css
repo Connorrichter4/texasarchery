@@ -1,0 +1,20 @@
+.location-container {
+	padding: 1rem;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.location-item {
+	padding: 1rem 0;
+	border-top: solid 1px;
+}
+
+.image-container {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 1rem;
+}
+
+.map-image {
+	max-width: 1200px;
+}

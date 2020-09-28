@@ -11,3 +11,13 @@ flame - #eb5e28
     background: #fffcf2;
     font-family: 'Open Sans', sans-serif;
 }
+
+.page-title {
+    border-bottom: solid 1px;
+    padding-bottom: 1rem;
+}
+
+.dropdown {
+    /* border: solid red; */
+    padding: 1rem;
+}

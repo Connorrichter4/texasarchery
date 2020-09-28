@@ -50,7 +50,7 @@ function FirstVisit() {
 	return (
 		<div className='faq-container'>
 			<div className='first-visit-headers'>
-				<h3>Things to know before you arrive!</h3>
+				<h2 className='page-title'>FAQ</h2>
 				<h4>
 					<span className='covid-update'>COVID-19 Update:</span> Masks are
 					required when not shooting

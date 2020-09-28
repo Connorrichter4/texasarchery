@@ -1,4 +1,4 @@
-.class-card {
+/* .class-card {
     padding-bottom: 1rem;
 }
 
@@ -11,4 +11,22 @@
         max-width: 1000px;
         margin: 0 auto;
 	}
+} */
+
+.class-container {
+    padding: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
+
+.class-title {
+    margin: 1rem 0;
+    padding-top: 1rem;
+    border-top: solid 1px;
+}
+
+.class-item {
+    padding: 1rem 0;
+    border-top: solid 1px;
+}
+

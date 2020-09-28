@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
@@ -24,6 +24,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Contact() {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	const classes = useStyles();
 
 	const [contact, setContact] = useState({
@@ -41,18 +45,6 @@ function Contact() {
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		fetch('http://localhost:3002/send', {
-			method: 'POST',
-			body: JSON.stringify(contact),
-			headers: {
-				Accept: 'application/json',
-				'Content-Type': 'application/json',
-			},
-		})
-			.then((response) => response.json())
-			.then((response) => {
-				console.log(response);
-			});
 	};
 
 	return (
@@ -62,7 +54,8 @@ function Contact() {
 				noValidate
 				autoComplete='off'
 				onSubmit={handleSubmit}
-				method="POST">
+				method='POST'
+				data-netlify='true'>
 				<h2>Contact Us:</h2>
 				<TextField
 					id='filled-basic'
@@ -98,6 +91,7 @@ function Contact() {
 					onChange={handleChange}
 					value={contact.message}
 				/>
+				<div data-netlify-recaptcha='true'></div>
 				<Button onClick={handleSubmit}>Submit</Button>
 			</form>
 		</div>

@@ -17,6 +17,11 @@ footer {
     padding-bottom: 1rem
 }
 
+.footer-links:hover {
+    color: rgb(220, 217, 209);
+    text-decoration: none;
+}
+
 .footer-left {
     display: flex;
     flex-direction: column;

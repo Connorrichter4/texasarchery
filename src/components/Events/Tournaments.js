@@ -17,16 +17,17 @@ const tournamentList = [
 			'http://texasarchery.info/wp-content/uploads/2020/01/Tail-Flyer-791x1024.jpg',
 	},
 	{
-		title: 'title goes here',
-		description: 'description goes here',
-		date: 'date goes here',
-		cost: 'cost goes here',
+		title: 'Halloween Candy Shoot',
+		description:
+			'Shoot for your candy! We supply all the equipment for a family fun shoot! Crazy targets and activities to provide your gremlins a fun, safe, Halloween experience! Costumes invited!',
+		date: '10/31',
 	},
 	{
-		title: 'title goes here',
-		description: 'description goes here',
-		date: 'date goes here',
-		cost: 'cost goes here',
+		title: 'Shoot Your Way Across Texas',
+		description:
+			'This is a state wide "league" held primarily during the winter (October - February). Tournaments are hosted by various shops or clubs around the state. Any archer can compete in the events but you must be a NFAA/TFAA Member to compete for the SYWAT Aggregate/Tour Champion award. N.F.A.A. divisions and shooting styles will be in effect.',
+		date: '11/21-11/22 ',
+		info: 'https://texasfieldarchery.org/sywat/indoor',
 	},
 ];
 
@@ -39,7 +40,7 @@ function Tournaments() {
 					<div key={index} className='event-item'>
 						<h4>{item.title}</h4>
 						<p>{item.description}</p>
-						<p>{item.date}</p>
+						{item.date ? <p>Date: {item.date}</p>: ''}
 						<p>{item.cost}</p>
 						{item.info ? (
 							<a href={item.info} target='_blank' rel='noopener noreferrer'>

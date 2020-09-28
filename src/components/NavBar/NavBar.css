@@ -17,6 +17,12 @@ header {
 	color: #fffcf2;
 	font-family: 'Poller One', cursive;
 }
+
+.title:hover {
+	color: #fffcf2;
+	text-decoration: none;
+}
+
 .nav-link {
 	margin-top: 1rem;
 	font-size: 1em;
@@ -26,4 +32,5 @@ header {
 .nav-link:hover {
 	background: rgb(96, 96, 96);
 	transition-duration: 0.5s;
+	color: rgb(220, 217, 209);
 }
