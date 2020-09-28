@@ -55,6 +55,7 @@ function Contact() {
 				autoComplete='off'
 				// onSubmit={handleSubmit}
 				method='POST'
+				action='/'
 				name='contact'>
 				<input type='hidden' name='form-name' value='contact' />
 				<h2>Contact Us:</h2>
