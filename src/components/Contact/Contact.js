@@ -43,9 +43,9 @@ function Contact() {
 		setContact({ ...contact, [event.target.name]: event.target.value });
 	};
 
-	const handleSubmit = (event) => {
-		event.preventDefault();
-	};
+	// const handleSubmit = (event) => {
+	// 	event.preventDefault();
+	// };
 
 	return (
 		<div className='contact-us'>
