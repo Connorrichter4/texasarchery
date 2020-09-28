@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
+// import TextField from '@material-ui/core/TextField';
+// import Button from '@material-ui/core/Button';
 import './Contact.css';
 
 const useStyles = makeStyles((theme) => ({
@@ -55,10 +55,10 @@ function Contact() {
 				autoComplete='off'
 				// onSubmit={handleSubmit}
 				method='POST'
-				action='/'
-				data-netlify='true'>
+				name='contact'>
+				<input type='hidden' name='form-name' value='contact' />
 				<h2>Contact Us:</h2>
-				<TextField
+				{/* <TextField
 					id='filled-basic'
 					label='Name'
 					name='name'
@@ -93,7 +93,25 @@ function Contact() {
 					// value={contact.message}
 				/>
 
-				<Button type='submit'>Submit</Button>
+				<Button type='submit'>Submit</Button> */}
+				<p>
+					<label>
+						Name: <input type='text' name='name' />
+					</label>
+				</p>
+				<p>
+					<label>
+						Email: <input type='email' name='email' />
+					</label>
+				</p>
+				<p>
+					<label>
+						Message: <textarea name='message'></textarea>
+					</label>
+				</p>
+				<p>
+					<button type='submit'>Send</button>
+				</p>
 			</form>
 		</div>
 	);
