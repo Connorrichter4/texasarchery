@@ -92,7 +92,7 @@ function Contact() {
 					value={contact.message}
 				/>
 				<div data-netlify-recaptcha='true'></div>
-				<Button onClick={handleSubmit}>Submit</Button>
+				<input type='submit' value='Submit' />
 			</form>
 		</div>
 	);
