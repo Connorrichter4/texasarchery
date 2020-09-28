@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
-// import Button from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button';
 import './Contact.css';
 
 const useStyles = makeStyles((theme) => ({
@@ -53,7 +53,7 @@ function Contact() {
 				className={classes.root}
 				noValidate
 				autoComplete='off'
-				onSubmit={handleSubmit}
+				// onSubmit={handleSubmit}
 				method='POST'
 				data-netlify='true'>
 				<h2>Contact Us:</h2>
@@ -92,7 +92,7 @@ function Contact() {
 					value={contact.message}
 				/>
 				<div data-netlify-recaptcha='true'></div>
-				<input type='submit' value='Submit' />
+				<Button type='submit'>Submit</Button>
 			</form>
 		</div>
 	);
