@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
@@ -30,18 +30,18 @@ function Contact() {
 
 	const classes = useStyles();
 
-	const [contact, setContact] = useState({
-		name: '',
-		email: '',
-		message: '',
-	});
+	// const [contact, setContact] = useState({
+	// 	name: '',
+	// 	email: '',
+	// 	message: '',
+	// });
 
 	// const [emailSent, setEmailSent] = useState(false);
 
-	const handleChange = (event) => {
-		event.persist();
-		setContact({ ...contact, [event.target.name]: event.target.value });
-	};
+	// const handleChange = (event) => {
+	// 	event.persist();
+	// 	setContact({ ...contact, [event.target.name]: event.target.value });
+	// };
 
 	// const handleSubmit = (event) => {
 	// 	event.preventDefault();
@@ -66,8 +66,8 @@ function Contact() {
 					style={{ margin: 8 }}
 					margin='normal'
 					fullWidth
-					onChange={handleChange}
-					value={contact.name}
+					// onChange={handleChange}
+					// value={contact.name}
 				/>
 				<TextField
 					id='filled-basic'
@@ -76,8 +76,8 @@ function Contact() {
 					variant='filled'
 					required
 					fullWidth
-					onChange={handleChange}
-					value={contact.email}
+					// onChange={handleChange}
+					// value={contact.email}
 				/>
 				<TextField
 					id='filled-basic'
@@ -88,10 +88,10 @@ function Contact() {
 					multiline
 					rows={4}
 					fullWidth
-					onChange={handleChange}
-					value={contact.message}
+					// onChange={handleChange}
+					// value={contact.message}
 				/>
-				<div data-netlify-recaptcha='true'></div>
+
 				<Button type='submit'>Submit</Button>
 			</form>
 		</div>
