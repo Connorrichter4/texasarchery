@@ -51,7 +51,9 @@ function Classes() {
 			<DropdownButton title='Select Class' variant='' className='dropdown'>
 				{classItems.map((item, index) => {
 					return (
-						<Dropdown.Item href={`#${item.id}`}>{item.name}</Dropdown.Item>
+						<Dropdown.Item href={`#${item.id}`} key={index}>
+							{item.name}
+						</Dropdown.Item>
 					);
 				})}
 			</DropdownButton>

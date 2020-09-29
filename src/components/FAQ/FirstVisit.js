@@ -66,8 +66,8 @@ function FirstVisit() {
 								</Accordion.Toggle>
 								<Accordion.Collapse eventKey={index + 1}>
 									<Card.Body>
-										{question.ans.map((answer) => {
-											return <p>{answer}</p>;
+										{question.ans.map((answer, index) => {
+											return <p key={index}>{answer}</p>;
 										})}
 									</Card.Body>
 								</Accordion.Collapse>

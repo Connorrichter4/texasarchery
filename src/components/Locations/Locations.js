@@ -22,7 +22,8 @@ const locationItems = [
 		id: 'plano-range',
 		description:
 			'Plano range is a 30,000 sf indoor training facility that consists of multiple 10yd and 20yd ranges.',
-		hours: 'Monday - Friday 3:00pm - 8:00pm, Saturday - Sunday 9:00am - 6:00pm.',
+		hours:
+			'Monday - Friday 3:00pm - 8:00pm, Saturday - Sunday 9:00am - 6:00pm.',
 		address: '600 Accent Dr, #B Plano, TX 75075',
 	},
 	{
@@ -61,7 +62,9 @@ function Locations() {
 				<DropdownButton title='Select Location' variant='' className='dropdown'>
 					{locationItems.map((item, index) => {
 						return (
-							<Dropdown.Item href={`#${item.id}`}>{item.name}</Dropdown.Item>
+							<Dropdown.Item href={`#${item.id}`} key={index}>
+								{item.name}
+							</Dropdown.Item>
 						);
 					})}
 					<Dropdown.Item href='#map'>Map</Dropdown.Item>
