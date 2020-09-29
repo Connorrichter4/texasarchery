@@ -80,7 +80,7 @@ function Contact() {
 						onChange={handleChange}
 						value={contact.message}
 						placeholder='Message'></textarea>
-					<div className='submit-btn'>Send</div>
+					<div className='submit-btn' onClick={handleSubmit}>Send</div>
 				</div>
 			</form>
 		</div>
