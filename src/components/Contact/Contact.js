@@ -17,6 +17,7 @@ function Contact() {
 		name: '',
 		email: '',
 		message: '',
+		phone: '',
 	});
 
 	// const [emailSent, setEmailSent] = useState(false);
@@ -45,35 +46,42 @@ function Contact() {
 				method='POST'
 				name='contact'>
 				<input type='hidden' name='form-name' value='contact' />
-				<h2>Contact Us:</h2>
-				<p>
-					<label>Name:</label>
+				{/* <h2>Contact Us:</h2> */}
+				<div className='input-fields'>
 					<input
+						className='input'
 						type='text'
 						name='name'
 						onChange={handleChange}
 						value={contact.name}
+						placeholder='Name'
 					/>
-				</p>
-				<p>
-					<label>Email:</label>
+
 					<input
+						className='input'
 						type='email'
 						name='email'
 						onChange={handleChange}
 						value={contact.email}
+						placeholder='Email'
 					/>
-				</p>
-				<p>
-					<label>Message:</label>
+					<input
+						className='input'
+						type='phone'
+						name='phone'
+						onChange={handleChange}
+						value={contact.phone}
+						placeholder='Phone Number'
+					/>
+				</div>
+				<div className='message-input'>
 					<textarea
 						name='message'
 						onChange={handleChange}
-						value={contact.message}></textarea>
-				</p>
-				<p>
-					<button type='submit'>Send</button>
-				</p>
+						value={contact.message}
+						placeholder='Message'></textarea>
+					<div className='submit-btn'>Send</div>
+				</div>
 			</form>
 		</div>
 	);

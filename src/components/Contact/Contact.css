@@ -1,4 +1,72 @@
 .contact-us {
-    padding: 1rem;
-    background-color: gray;
+	padding: 1rem;
+	min-height: 60vh;
+	background-color: gray;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.contact-form {
+	max-width: 800px;
+	width: 70vw;
+	background-color: #fffcf2;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #252422;
+}
+
+.input-fields {
+	display: flex;
+	flex-direction: column;
+	margin-right: 4%;
+}
+
+.message-input {
+	display: flex;
+	flex-direction: column;
+}
+
+.message-input,
+.input-fields {
+	width: 100%;
+}
+
+.input-fields .input,
+.message-input textarea {
+	margin: 1rem 0;
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid #252422;
+	padding: 1rem;
+	color: #252422;
+	width: 100%;
+}
+
+.message-input textarea {
+	height: 80px;
+}
+
+.submit-btn {
+	background: #39b7dd;
+	text-align: center;
+	padding: 1rem;
+	border-radius: 5px;
+	color: #fffcf2;
+}
+
+@media screen and (min-width: 450px) {
+	.contact-form {
+		flex-direction: row;
+	}
+	.message-input textarea {
+		height: 225px;
+	}
+	.message-input,
+	.input-fields {
+		width: 48%;
+	}
 }

@@ -21,7 +21,7 @@
 		align-items: center;
 	}
 
-@media (min-width: 450px) {
+@media screen and (min-width: 450px) {
 	.home-image {
 		width: 100vw;
 		height: 100%;

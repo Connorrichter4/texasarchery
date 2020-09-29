@@ -6,6 +6,11 @@ eerie black - #252422
 flame - #eb5e28
 */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
 .App {
     background: #fffcf2;
