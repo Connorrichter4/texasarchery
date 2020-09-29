@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
+import { Redirect } from 'react-router-dom';
+
+import Alert from 'react-bootstrap/Alert';
+import Button from 'react-bootstrap/Button';
+
 import './Contact.css';
 
 const encode = (data) => {
@@ -20,7 +25,8 @@ function Contact() {
 		phone: '',
 	});
 
-	// const [emailSent, setEmailSent] = useState(false);
+	const [show, setShow] = useState(false);
+	const [success, setSuccess] = useState(false);
 
 	const handleChange = (event) => {
 		event.persist();
@@ -34,12 +40,33 @@ function Contact() {
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 			body: encode({ 'form-name': 'contact', ...contact }),
 		})
-			.then(() => alert('Success!'))
+			.then(setShow(true))
 			.catch((error) => alert(error));
 	};
 
+	const handleAlertClose = () => {
+		setShow(false);
+		setSuccess(true);
+	}
+
+	if(success){
+		return <Redirect to='/' />
+	}
+
 	return (
 		<div className='contact-us'>
+			<Alert show={show} variant='success'>
+				<Alert.Heading>Message Sent!</Alert.Heading>
+				<p>
+					Your message has been sent. We will email you shortly.
+				</p>
+				<hr />
+				<div className='d-flex justify-content-end'>
+					<Button onClick={handleAlertClose} variant='outline-success'>
+						Back to homepage!
+					</Button>
+				</div>
+			</Alert>
 			<form
 				className='contact-form'
 				onSubmit={handleSubmit}
@@ -80,7 +107,9 @@ function Contact() {
 						onChange={handleChange}
 						value={contact.message}
 						placeholder='Message'></textarea>
-					<div className='submit-btn' onClick={handleSubmit}>Send</div>
+					<div className='submit-btn' onClick={handleSubmit}>
+						Send
+					</div>
 				</div>
 			</form>
 		</div>
